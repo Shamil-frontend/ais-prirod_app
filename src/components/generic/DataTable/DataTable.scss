@@ -1,0 +1,15 @@
+.data-table {
+  display: grid;
+
+  thead,
+  tbody,
+  tr {
+    display: contents;
+  }
+
+  thead th {
+    position: sticky;
+    top: var(--navbar-height);
+    background-color: #fff;
+  }
+}

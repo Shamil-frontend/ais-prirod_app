@@ -1,0 +1,72 @@
+.custom-paginator {
+  padding: 3px;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+}
+
+.btn-paginator {
+  padding: 6px 14px;
+  border-radius: 20px;
+
+  &:not(:last-child) {
+    margin-right: 2px;
+  }
+}
+
+.btn.btn-paginator.btn-light.btn-arrow, .btn.btn-paginator.btn-light.disabled {
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 6px 10px;
+  // font-size: 19px;
+}
+
+.btn.btn-paginator.btn-light.btn-arrow {
+  background-color: #f9fafa;
+
+  &:hover {
+    background-color: #dddddd;
+    // border: transparent;
+  }
+}
+
+.btn.btn-paginator.btn-light.disabled {
+  background-color: #f0f0f0;
+}
+
+// .btn-light.disabled, .btn-light.disabled {
+//   background-color: #ffffff;
+//   border: 1px solid transparent;
+// }
+
+// .btn-light {
+//   background-color: #ffffff;
+//   border: 1px solid transparent;
+// }
+
+// .btn-arrow {
+//   background-color: #ffffff !important;
+//   border: 1px solid #b5b5b6 !important;
+// }
+
+// .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show>.btn-light.dropdown-toggle {
+
+//   background-color: #dbdbdbb2 !important;
+//   border: 1px solid #b3b3b3 !important;
+// }
+
+// .btn-arrow:not(:disabled):not(.disabled):active, .btn-arrow:not(:disabled):not(.disabled).active, .show>.btn-arrow.dropdown-toggle {
+
+//   background-color: #e2e2e2;
+//   border: 1px solid transparent;
+// }
+
+// .btn-page:hover,
+// .btn-page:focus {
+//   margin: 0 !important;
+//   border: 1px solid #b5b5b6 !important;
+// }
+
+// .btn:not(.disabled):hover {
+//   margin-top: 0px;
+//   border-bottom-width: 0px;
+// }

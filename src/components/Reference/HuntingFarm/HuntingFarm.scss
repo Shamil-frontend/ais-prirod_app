@@ -1,0 +1,162 @@
+.huntingFarmSidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 25px;
+  background-color: #fff;
+  border: 1px solid #eaeef14d;
+}
+
+.huntingFarm-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  flex-grow: 0;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.huntingFarm-nav {
+  margin-bottom: 25px;
+}
+
+.huntingFarm-nav-list {
+  width: 450px;
+}
+
+.huntingFarm-nav-item {
+  display: flex;
+  flex-grow: 0;
+  align-items: center;
+}
+
+.huntingFarm-nav-item a:hover {
+  text-decoration: none;
+}
+
+.huntingFarm-nav-item a {
+  position: relative;
+  width: 100%;
+  padding: 8px 16px !important;
+  border-radius: 3px 3px 0px 0px;
+  border-bottom: 2px solid #9ca9ad6c;
+  font-size: 13px;
+  text-shadow: 0px 0px 1px rgb(197, 197, 197);
+  color: #333333;
+
+  &:not(.active-tabs):hover {
+    border-bottom-color: #9ca9ad26;
+    background-color: #9ca9ad26;
+    color: #804b4b !important;
+  }
+}
+
+.huntingFarm-nav-item a.active-tabs {
+  background-color: #a0aab1;
+  border-bottom-color: #a0aab1;
+  border-radius: 3px 3px 0px 0px;
+  color: #ffffff;
+}
+
+//==========HUNTING_FARM============
+
+.huntingFarm-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0px 25px;
+}
+
+.huntingFarm-top-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  & .form-group {
+    margin: 0;
+    width: 300px;
+  }
+
+  & button {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+}
+
+.huntingFarm-select-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+  border-radius: 0;
+
+  & .form-label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+}
+
+.huntingFarm-select {
+
+  & .custom-select {
+    height: 35px;
+    border-radius: 0;
+    font-size: 14px;
+    color: #98a6ad;
+
+    & option {
+      padding: 10px;
+      margin-bottom: 10px !important;
+      color: #757575;
+    }
+  }
+
+}
+
+.huntingFarm-middle-block {
+  flex-grow: 1;
+}
+
+.huntingFarm-bottom-block {
+  margin-top: auto;
+}
+
+.thead-huntingFarm {
+
+  tr {
+    th:nth-child(2) {
+      min-width: 200px;
+      width: 35%;
+    }
+    th:last-child {
+      width: 150px;
+
+      & button {
+        padding: 4px 8px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.tBody-huntingFarm {
+  tr {
+
+    td:first-child {
+      text-align: center;
+    }
+
+    td:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+
+      & span:last-child {
+        font-size: 11px;
+        color: #98a6ad;
+      }
+    }
+  }
+}

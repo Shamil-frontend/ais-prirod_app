@@ -1,0 +1,16 @@
+.btn-sort {
+  font-weight: 500;
+
+  .icon {
+    margin-right: 6px;
+    fill: var(--primary);
+  }
+
+  span {
+    border-bottom: 1px dashed;
+  }
+
+  &:hover span {
+    border-bottom: 0;
+  }
+}

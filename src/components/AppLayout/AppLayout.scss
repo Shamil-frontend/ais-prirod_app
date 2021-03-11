@@ -1,0 +1,23 @@
+.app {
+  &-container {
+    display: flex;
+  }
+
+  &-content {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 10px 15px;
+
+    &-body {
+      height: 100%;
+      padding: 1.25rem;
+      background-color: #fff;
+      border-radius: 0.5rem;
+      box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04);
+    }
+  }
+}

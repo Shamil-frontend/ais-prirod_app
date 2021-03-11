@@ -1,0 +1,20 @@
+.info-block {
+  padding-top: 25px;
+  padding-bottom: 5px;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid var(--light);
+  }
+
+  &-title {
+    margin-bottom: 25px;
+    font-weight: 200;
+  }
+
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+}

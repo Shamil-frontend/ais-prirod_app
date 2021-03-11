@@ -1,0 +1,79 @@
+.custom-check {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  .form-control {
+    width: auto;
+    margin-right: 15px;
+    &:disabled {
+      cursor: default;
+
+      & ~ .form-label {
+        background-color: var(--input-disabled-bg);
+        color: var(--input-disabled-color);
+        cursor: default;
+      }
+    }
+  }
+
+  .form-control:focus,
+  .form-control:hover {
+    color: var(--input-color);
+    cursor: pointer;
+    background-color: transparent;
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
+  }
+
+  .form-label {
+    margin: 0;
+    text-transform: capitalize;
+  }
+
+  .form-label:hover { 
+    cursor: pointer;
+  }
+
+  // .form-label {
+  //   position: absolute;
+  //   top: 13px;
+  //   left: 16px;
+  //   overflow: hidden;
+  //   width: calc(100% - 28px);
+  //   padding-top: 6px;
+  //   padding-bottom: 6px;
+  //   margin-bottom: 0;
+  //   color: var(--input-placeholder-color);
+  //   cursor: text;
+  //   font-size: 16px;
+  //   -moz-osx-font-smoothing: grayscale;
+  //   -webkit-font-smoothing: antialiased;
+  //   line-height: 1;
+  //   text-overflow: ellipsis;
+  //   transform-origin: left top;
+  //   transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+  //     color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  //   white-space: nowrap;
+  //   will-change: transform;
+  // }
+
+  // .form-control:focus ~ .form-label,
+  // &.is-focused .form-label,
+  // &.has-value .form-label {
+  //   width: 100%;
+  //   transform: translateY(-32%) scale(0.7);
+  // }
+
+  // textarea.form-control {
+  //   height: auto;
+  //   min-height: 100px;
+
+  //   & + .form-label {
+  //     top: 12px;
+  //     background-color: #ffffff;
+  //   }
+  // }
+}

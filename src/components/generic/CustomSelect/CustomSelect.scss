@@ -1,0 +1,99 @@
+.custom-select2 {
+  position: relative;
+
+  // .css-2b097c-container {
+  //   z-index: 10;
+  //   background-color: transparent;
+  // }
+
+  .react-select {
+    &__control {
+      position: relative;
+      height: 54px;
+      border-color: var(--input-border-color);
+      border-radius: 0;
+      background-color: transparent;
+      // cursor: pointer;
+
+      &--is-focused {
+        border-color: var(--input-focus-border-color);
+        box-shadow: var(--input-btn-focus-box-shadow);
+      }
+    }
+
+    &__value-container {
+      padding: 22px 0 6px 16px;
+
+      & > div:last-of-type {
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    &__single-value {
+      position: static;
+      margin: 0;
+      color: var(--input-color);
+      line-height: 1;
+      transform: none;
+    }
+
+    &__placeholder {
+      display: none;
+    }
+
+    &--is-disabled {
+      .react-select__control {
+        background-color: var(--input-disabled-bg);
+      }
+
+      & ~ .form-label {
+        color: var(--input-disabled-color);
+        cursor: default;
+      }
+    }
+
+    &__menu {
+      margin-top: 1px;
+      border-radius: 0;
+    }
+  }
+
+  &.is-invalid .react-select__control {
+    border-color: var(--danger);
+
+    &--is-focused {
+      box-shadow: var(--input-btn-focus-box-shadow-invalid);
+    }
+  }
+
+  .form-label {
+    position: absolute;
+    top: 13px;
+    left: 16px;
+    overflow: hidden;
+    width: calc(100% - 100px);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 0;
+    color: var(--input-placeholder-color);
+    cursor: pointer;
+    font-size: 16px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1;
+    text-overflow: ellipsis;
+    transform-origin: left top;
+    transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+      color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
+    will-change: transform;
+    // z-index: 1;
+  }
+
+  &.is-focused .form-label,
+  &.has-value .form-label {
+    width: 100%;
+    transform: translateY(-32%) scale(0.7);
+  }
+}

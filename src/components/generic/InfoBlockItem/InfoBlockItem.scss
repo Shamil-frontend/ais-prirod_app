@@ -1,0 +1,15 @@
+.info-block-item {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  flex-basis: 33%;
+  flex-grow: 1;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-bottom: 25px;
+
+  & > :first-child {
+    display: block;
+    color: var(--muted);
+  }
+}

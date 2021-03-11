@@ -1,0 +1,199 @@
+.login-form {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color:#1b1c24ef;
+  background: linear-gradient(0deg, #1b1c24ef 0%,#202230ef 39%, #1f2238ef 100%);
+
+  form {
+    width: 450px;
+    padding: 50px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background: linear-gradient(to top, #8c9e8d23 3%,  #6e8aa344 50%);
+  }
+
+  .dv {
+    height: 150px;
+    margin-bottom: 20px;
+    padding: 25px;
+    background-color: #262a2e;
+  }
+
+  .dv2 {
+   padding: 0 50px;
+  }
+
+  h1 {
+    color: #d0d0d0;
+    font-size: 2.5rem;
+    font-weight: 200;
+    line-height: 1;
+    text-align: left;
+  }
+
+  .logo-title-color {
+    // background: -webkit-linear-gradient(0deg,rgb(149, 168, 126) -10%, rgb(7, 124, 22) 100%);
+    // background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    color: rgb(224, 223, 223);
+  }
+
+  #login {
+    margin-bottom: 25px;
+  }
+
+  .auth-input-wrapper {
+    position: relative;
+
+    & span {
+      position: absolute;
+
+      top: calc(50% - 15px);
+      left: 5px;
+    }
+
+    & button {
+      position: absolute;
+
+      top: calc(50% - 15px);
+      right: 5px;
+    }
+  }
+
+  .auth-incorrect-message {
+    // margin-bottom: -15px;
+    // padding: 10px 10px;
+    // border: 1px solid rgb(194, 31, 31);
+    color: #c34a4a;
+  }
+
+  .input-login-form {
+    padding: 10px 25px;
+    padding-left: 35px;
+
+    border-color: rgb(157, 178, 196);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-radius: 0;
+    background-color: transparent;
+
+    &::placeholder {
+      color: rgba(180, 178, 178, 0.719);
+    }
+  }
+
+  .input-color {
+    color: rgba(224, 229, 231, 0.856);
+    animation: borderRadius 0.4s ease-out 0s both;
+  }
+
+  @keyframes borderRadius{
+    0%  {
+    }
+    100% {
+      // border-top-color: #27b32e;
+      border-bottom-color: #008cff;
+    }
+  }
+
+  .input-login-form.form-control:focus {
+    color: rgb(255, 255, 255);
+    background-color: transparent !important;
+    outline: 0;
+    box-shadow: none;
+    // animation: borderColorFocus 0.35s ease-out 0s both;
+  }
+
+  // .input-login-form:focus {
+  //   animation: borderColorFocus 0.35s ease-out 0s both;
+  // }
+
+  // @keyframes borderColorFocus{
+  //   0%  {
+  //     border-color: #9db2c4 !important;
+  //   }
+
+  //   // 100% {
+  //   //   border-color: #008cff !important;
+  //   // }
+  // }
+
+  // .input-login-form-not-focus {
+  //   animation: borderColorNotFocus 0.35s ease-out 0s both;
+  // }
+
+  // @keyframes borderColorNotFocus{
+  //   0%  {
+  //     border-color: #008cff;
+  //   }
+
+  //   100% {
+  //     border-color: #9db2c4;
+  //   }
+  // }
+
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    -webkit-text-fill-color: rgb(255, 255, 255) ;
+    box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,174,255,0.04) 50%,rgba(255,255,255,0) 51%,rgba(0,174,255,0.03) 100%);
+  }
+
+  input:-webkit-autofill:not(:focus) {
+    -webkit-text-fill-color: rgba(224, 229, 231, 0.856);
+  }
+
+  .login-btn {
+    margin-top: 20px;
+    border-color: #0e559770;
+    background-color: #154d81c9;
+    &:focus {
+      border-color:  #2459ca;
+      box-shadow:  0 0 2px 1px rgba(11, 96, 165, 0.685);
+    }
+  }
+
+  .btn-primary:not(:disabled):not(.disabled):active:focus,
+  .btn-primary:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-primary.dropdown-toggle:focus {
+    border-color:  transparent;
+    box-shadow:  0 0 2px 1px rgba(11, 96, 165, 0.685);
+  }
+
+  label {
+    color: #fff;
+  }
+
+  .login-label {
+    margin-bottom: 0;
+  }
+}
+
+
+// .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
+//   // border-color: #23be5f;
+//   border-color: rgb(157, 178, 196);
+//   box-shadow: 0 0 0 0.2rem transparent !important;
+// }
+
+.was-validated .input-login-form.form-control:valid:focus, .form-control.is-valid:focus {
+  border-color: #008cff !important;
+  box-shadow: 0 0 0 0.2rem transparent !important;
+}
+
+.form-control:disabled, .form-control[readonly] {
+  border-color: rgb(157, 178, 196);
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    background-color: transparent !important;
+}

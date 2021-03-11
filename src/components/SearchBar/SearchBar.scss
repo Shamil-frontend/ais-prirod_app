@@ -1,0 +1,120 @@
+.serchBar-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  // border-bottom: 1px solid #d8d8d8;
+}
+
+.search-icon {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 10px;
+  z-index: 10;
+  fill:#a5b1bc;
+}
+
+.serch-bar {
+  align-items: stretch;
+  width: 100%;
+  padding: 10px 80px;
+  padding-left: 40px;
+
+  border: 1px solid transparent;
+  border-bottom: 1px solid #d8d8d8;
+  font-size: 14px;
+
+  &:focus {
+    color: var(--input-color);
+    animation: searchBar 0.4s ease-out 0s both;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #d8d8d8;
+    box-shadow: none !important;
+  }
+  &:active {
+    border: 1px solid transparent;
+  }
+}
+
+@keyframes searchBar{
+  0%  {
+  }
+  100% {
+    border: 1px solid transparent;
+    border-bottom: 1px solid #145388;
+    box-shadow: 0px 0px 8px 8px transparent;
+    background-color:  #ffffff;
+  }
+}
+
+.was-validated .serch-bar:invalid, .serch-bar.is-invalid {
+  border: 1px solid transparent;
+  border-bottom: 1px solid #dc3545 !important;
+
+  &:not(:focus) {
+    border: 1px solid transparent;
+    border-bottom: 1px solid #dc3545 !important;
+  }
+
+  &:focus {
+    border: 1px solid transparent;
+    border-bottom: 1px solid #dc3545 !important;
+  }
+}
+
+.was-validated .serch-bar:valid {
+  border: 1px solid transparent ;
+  border-bottom: 1px solid #145388 !important;
+
+  &:focus {
+    border: 1px solid transparent;
+    border-bottom: 1px solid #145388 !important;
+  }
+
+  &:not(:focus) {
+    border: 1px solid transparent;
+    border-bottom: 1px solid #d8d8d8 !important;
+  }
+}
+
+
+.btn-search {
+  position: absolute;
+  top: 0;
+  right: 1px;
+  width: 80px;
+  height: calc(100% - 2px);
+  padding: 7px 12px;
+  background-color: rgb(255, 255, 255);
+  font-size: 12px !important;
+  font-weight: 500;
+  color: #757575;
+  z-index: 10;
+
+  &:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+
+  &:focus {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 0 0.1rem transparent;
+  }
+
+  &:active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 0 0.1rem transparent;
+  }
+}
+
+.acitveClass {
+  &-icon svg {
+    color: #61c6ed;
+  }
+
+  &-serch {
+    border: 2px solid #a0cee0;
+    box-shadow: 0 0 0 0.2rem rgba(21,140,186,0.25);
+  }
+}

@@ -1,0 +1,370 @@
+$modal-h-lg: 700px;
+
+.search-block {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.individuals- {
+  &wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: calc(100% - 51px);
+  }
+
+  &nav-container {
+    display: flex;
+    flex-direction: column;
+    width: 355px;
+    min-width: 355px;
+    border-right: 1px solid #eaeef14d;
+    .nav-header {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+      padding: 5px 15px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #dee2e6;
+    }
+
+    h4 {
+      margin: 0;
+    }
+
+    .num-entries {
+      white-space: nowrap;
+      line-height: 38px;
+      font-size: 14px;
+      color: #757575;
+    }
+  }
+
+
+
+  &nav-block {
+    flex-grow: 1;
+  }
+
+  &nav-list-wrapper {
+    // height: 685px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  &nav-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0px 15px;
+  }
+
+  &nav-item {
+    margin-bottom: 12px;
+    background-color: transparent;
+
+    a {
+      color: rgb(64, 64, 65);
+      text-align: left;
+      border-radius: 9px !important;
+      background-color: #ececec6c;
+      padding: 0.8rem 1rem;
+
+      &:hover {
+        background-color: #f4f4f4;
+        border-radius: 9px !important;
+        transition: background-color 0.4s ease-out 0s ;
+      }
+    }
+  }
+
+}
+.active-link {
+  animation: activelink 0.2s ease-out 0s both;
+}
+
+@keyframes activelink{
+  0%  {
+    border-left: 1px solid #5c7da1;
+  }
+  100% {
+    background-color: #f4f4f4;
+    border-left: 6px solid #5c7da1;
+  }
+}
+
+.individual {
+  &-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-fio{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 1px #757575;
+    // font-weight: 600;
+    color: #333;
+  }
+
+  &-dop-info span {
+
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    color: #98a6ad;
+
+    &:first-child {
+      margin-bottom: 3px;
+    }
+  }
+}
+
+.search-nothing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px;
+
+  &-text {
+    width: 100%;
+    max-height: 42px;
+    padding: 10px 5px;
+
+    font-weight: bold;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    text-align: center;
+    color: #333;
+    overflow: hidden;
+  }
+
+}
+
+.alert{
+  &-conteiner {
+    flex-grow: 1;
+    padding: 5px 15px;
+    background-color: #fff;
+
+    .alert-secondary {
+      border-color: transparent;
+      // #e7d8c4
+    }
+  }
+
+  &-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    // margin: 15px;
+    padding: 6px 15px;
+  }
+
+  &-text {
+    display: block;
+    margin: 0;
+    margin-right: 5px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #808e9b;
+  }
+
+  &.bkg-warning {
+    background-color: #f1e3cd;
+  }
+
+  &.bck-secondary {
+    background-color: #ebedef;
+  }
+}
+
+
+
+//IndividualInfo
+
+.individual {
+  &-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-left: 1px solid #eaeef14d;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-width: 670px;
+  }
+
+  &-content:focus {
+    outline: none;
+  }
+
+  &-btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100px;
+  }
+
+  &-full-data {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-bottom: 5px;
+    padding: 25px;
+
+    .block-dop-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      font-size: 12px;
+      color: #757575;
+
+      .span-text-bold {
+        margin-right: 5px;
+        font-weight: bold;
+        color: #656565;
+      }
+    }
+  }
+
+  &-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    margin-right: 15px;
+  }
+
+
+
+  &-wrapper-data {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    font-size: 14px;
+
+    .data-cart {
+      margin-bottom: 20px;
+      font-size: 24px;
+      letter-spacing: 0px;
+      word-spacing: 4px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 500;
+      color: #333;
+
+    }
+
+    .data-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-right: 8px;
+    }
+
+    .data-item {
+      display: flex;
+      padding: 4px 0;
+      font-weight: 500;
+      color: #333;
+      font-size: 14px;
+
+      .data-individual {
+        flex-grow: 1;
+        padding-left: 13px;
+        padding-top: 1px;
+        letter-spacing: 1px;
+        text-shadow: none;
+        font-size: 13px;
+        font-weight: normal;
+        color: #757575;
+      }
+    }
+  }
+
+  &-actions {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    padding: 5px 25px;
+  }
+
+}
+
+
+//IndividualModal
+
+.modal-info .modal-dialog {
+  max-width: 900px;
+}
+
+.wrapper-info-modal {
+  height: $modal-h-lg;
+}
+
+.individual {
+  &-modal-header {
+    position: relative;
+  }
+}
+
+.info-input-conteiner {
+  margin-bottom: 7px;
+  padding: 0px 0px;
+
+  .form-label {
+    position: absolute;
+    top: -12px;
+    left: 14px;
+
+    background-color: #fff;
+
+    font-size: 13px;
+    font-weight: bold;
+    color: #313131;
+    color: #2d6780;
+  }
+}
+
+.info-modal-input {
+  padding: 6px 10px;
+  border: none;
+  border-bottom: 2px solid #939fa6 !important;
+  font-size: 15px;
+  color: #6b6969;
+
+  &:disabled {
+    background-color: transparent;
+  }
+}
+
+.block-dop-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  font-size: 12px;
+
+  .span-text-bold {
+    margin-right: 5px;
+    font-weight: bold;
+  }
+}
+
+.title-wrapper {
+  position: relative;
+}
+
+.btn-switch {
+  position: absolute;
+
+  left: 180px;
+  top: 4px;
+}
